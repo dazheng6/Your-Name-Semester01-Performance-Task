@@ -6,6 +6,7 @@
 size = Vector2(288, 376)
 
 [node name="Enemy" type="RigidBody2D"]
+gravity_scale = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(184, -188)

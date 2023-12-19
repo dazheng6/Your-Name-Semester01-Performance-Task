@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var speed = 400
+@export var speed = 20
 
 func _process(velocity):
 	velocity = Vector2.ZERO
@@ -19,3 +19,7 @@ func _process(velocity):
 		
 	position += velocity * speed
 	
+
+
+func _on_body_entered(body):
+	hide()
